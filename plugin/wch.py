@@ -45,12 +45,13 @@ class WindowCenteringHelper(FlowLauncher):
         for window in all_windows:
             if window.title:
                 if not window.isMaximized:
-                    if window.visible:
-                        if title.lower() in window.title.lower():
-                            self.addMessage(title=f"{window.title} ({window._hWnd})",
-                                            method="centeringWindow",
-                                            parameters=window._hWnd
-                                            )
+                    if not window.isMinimized:
+                        if window.visible:
+                            if title.lower() in window.title.lower():
+                                self.addMessage(title=f"{window.title} ({window._hWnd})",
+                                                method="centeringWindow",
+                                                parameters=window._hWnd
+                                                )
 
     def resizeWindow(self, window) -> None:
         screen_width, screen_height = size()
