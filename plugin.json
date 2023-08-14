@@ -1,0 +1,12 @@
+{
+	"ID": "4f4e6a54-29d3-4d61-9eb9-3b4a9ffac568",
+	"ActionKeyword": "wch",
+	"Name": "WindowCenteringHelper",
+	"Description": "Centering windows",
+	"Author": "Curicano",
+	"Version": "1.0.0",
+	"Language": "python",
+	"Website": "https://github.com/Curicano/Flow.Launcher.Plugin.WindowCenteringHelper",
+	"IcoPath": "Images\\app.png",
+	"ExecuteFileName": "main.py"
+}

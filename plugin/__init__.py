@@ -1,0 +1,1 @@
+from plugin.wch import WindowCenteringHelper
