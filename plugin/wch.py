@@ -1,5 +1,5 @@
 from pyautogui import size
-from pygetwindow import getAllWindows
+from pygetwindow import getAllWindows, PyGetWindowException
 from flowlauncher import FlowLauncher
 
 
@@ -25,7 +25,7 @@ class WindowCenteringHelper(FlowLauncher):
             }
         ]
 
-    def addMessage(self, title: str, method: str, parameters: str, subtitle: str = "") -> None:
+    def addMessage(self, title: str, method: str = "", parameters: str = "", subtitle: str = "") -> None:
         self.query_results.append(
             {
                 "Title": title,
@@ -57,7 +57,10 @@ class WindowCenteringHelper(FlowLauncher):
         screen_width, screen_height = size()
         new_width = int(screen_width/100*80)
         new_height = int(screen_height/100*80)
-        window.resizeTo(new_width, new_height)
+        try:
+            window.resizeTo(new_width, new_height)
+        except PyGetWindowException:
+            pass
 
     def centeringWindow(self, hwnd: str, resize: bool = False) -> None:
         all_windows = getAllWindows()
@@ -68,4 +71,7 @@ class WindowCenteringHelper(FlowLauncher):
                 screen_width, screen_height = size()
                 new_win_x, new_win_y = (
                     (screen_width - window.width) / 2), ((screen_height - window.height) / 2)
-                window.moveTo(int(new_win_x), int(new_win_y))
+                try:
+                    window.moveTo(int(new_win_x), int(new_win_y))
+                except PyGetWindowException:
+                    pass
