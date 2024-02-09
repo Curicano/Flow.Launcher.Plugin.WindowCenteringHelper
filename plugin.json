@@ -4,7 +4,7 @@
 	"Name": "WindowCenteringHelper",
 	"Description": "Centering windows",
 	"Author": "Curicano",
-	"Version": "1.0.2",
+	"Version": "1.0.3",
 	"Language": "python",
 	"Website": "https://github.com/Curicano/Flow.Launcher.Plugin.WindowCenteringHelper",
 	"IcoPath": "Images\\app.png",
