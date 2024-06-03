@@ -3,6 +3,9 @@ Placing your windows in the center and changing its size in 80% of the screen si
 
 Simply type "wc" to start
 
+Example:
+  Notepad 80
+
 # Installation:
 
 ### Flow Lancher:
