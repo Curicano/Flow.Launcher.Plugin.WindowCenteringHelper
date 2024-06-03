@@ -4,9 +4,11 @@
 	"Name": "WindowCenteringHelper",
 	"Description": "Centering windows",
 	"Author": "Curicano",
-	"Version": "1.0.3",
+	"Version": "1.0.4",
 	"Language": "python",
 	"Website": "https://github.com/Curicano/Flow.Launcher.Plugin.WindowCenteringHelper",
-	"IcoPath": "Images\\app.png",
-	"ExecuteFileName": "main.py"
+	"ExecuteFileName": "main.py",
+    "UrlDownload": "https://github.com/Curicano/Flow.Launcher.Plugin.WindowCenteringHelper/releases/download/v1.0.4/Flow.Launcher.Plugin.WindowCenteringHelper.zip",
+    "UrlSourceCode": "https://github.com/Curicano/Flow.Launcher.Plugin.WindowCenteringHelper/tree/main",
+    "IcoPath": "https://cdn.jsdelivr.net/gh/Curicano/Flow.Launcher.Plugin.WindowCenteringHelper@main/Images/app.png"
 }
